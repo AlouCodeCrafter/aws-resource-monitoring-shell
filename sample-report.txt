@@ -1,0 +1,164 @@
+list aws s3
+fin aws s3
+list ec2
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0521cb2d60cfbb1a6",
+                    "InstanceId": "i-0cb0b5aefb5713edc",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "devops-100-days",
+                    "LaunchTime": "2026-06-16T18:01:35.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1c",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-31-197.ec2.internal",
+                    "PrivateIpAddress": "172.31.31.197",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-98-89-4-29.compute-1.amazonaws.com",
+                    "PublicIpAddress": "98.89.4.29",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-05d959feaa7a2ba9c",
+                    "VpcId": "vpc-0af99f7836b7b23fa",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2026-06-16T18:01:36.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0110776a2d78f8b5a"
+                            }
+                        }
+                    ],
+                    "ClientToken": "35245fc3-ca5b-4b1f-a706-ee1d1a47e46a",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-98-89-4-29.compute-1.amazonaws.com",
+                                "PublicIp": "98.89.4.29"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2026-06-16T18:01:35.000Z",
+                                "AttachmentId": "eni-attach-0bc9e6bdb43d34785",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-1",
+                                    "GroupId": "sg-0f22f588f17c84d2a"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:ff:fc:31:84:eb",
+                            "NetworkInterfaceId": "eni-00dfd86d506706b96",
+                            "OwnerId": "569907147319",
+                            "PrivateDnsName": "ip-172-31-31-197.ec2.internal",
+                            "PrivateIpAddress": "172.31.31.197",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-98-89-4-29.compute-1.amazonaws.com",
+                                        "PublicIp": "98.89.4.29"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-31-197.ec2.internal",
+                                    "PrivateIpAddress": "172.31.31.197"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-05d959feaa7a2ba9c",
+                            "VpcId": "vpc-0af99f7836b7b23fa",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-1",
+                            "GroupId": "sg-0f22f588f17c84d2a"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "devops-100-days"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "569907147319",
+            "ReservationId": "r-0c4a857aaddd411d5"
+        }
+    ]
+}
+fin list ec2
+list lambda
+{
+    "Functions": []
+}
+fin list lambda
+list iam
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "Admin",
+            "UserId": "AIDAYJMI46I324R6P5YID",
+            "Arn": "arn:aws:iam::569907147319:user/Admin",
+            "CreateDate": "2026-03-25T18:44:36Z",
+            "PasswordLastUsed": "2026-06-17T10:36:35Z"
+        },
+        {
+            "Path": "/",
+            "UserName": "alou",
+            "UserId": "AIDAYJMI46I3TZPZZPW7G",
+            "Arn": "arn:aws:iam::569907147319:user/alou",
+            "CreateDate": "2026-03-25T16:12:15Z",
+            "PasswordLastUsed": "2026-03-25T16:16:58Z"
+        }
+    ]
+}
+fin list iam
